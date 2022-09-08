@@ -9,8 +9,8 @@ pipeline {
         }
 
     }
-
-    stages('Run Tests') {
+    stages {
+    stage('Run Tests') {
 
         parallel {
 
@@ -36,6 +36,7 @@ pipeline {
 
         }
 
+    }
     }
 
 }
